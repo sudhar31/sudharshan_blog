@@ -1,0 +1,76 @@
+.navbar {
+    padding: 10px 10px;
+    background-color: transparent; /* Initially transparent */
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #FAEDF0; /* Color after scroll */
+}
+
+.navbar-brand {
+    color: #161853;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px; /* Adds space between the text and the edge */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #EC255A;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    position: relative;
+    color: #161853;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #EC255A;
+}
+
+.nav-link:after {
+    content: '';
+    color: #F7E7DC;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #292C6D;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+    color: #D4BDAC;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between social icons */
+}
+
+.social-icon {
+    font-size: 20px; /* Adjust the size of the icons */
+    color: #161853;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #EC255A;
+}

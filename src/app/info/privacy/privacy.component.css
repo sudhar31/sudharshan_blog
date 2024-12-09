@@ -1,0 +1,83 @@
+.privacy-container {
+    max-width: 100%;
+    margin-top: 40px; /* Center the content on the page */
+    padding: 20px;
+    background-color: #ffffff; /* Light background to contrast with the dark navbar */
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #121212;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #121212;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    margin-left: 20px;
+    color: #555;
+}
+
+.checkbox-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.checkbox-container label {
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btn-know-more {
+    background-color: #EC255A;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-know-more:hover {
+    background-color: #292C6D;
+    color: #ffffff;
+}
+
+.error-message {
+    color: #EC255A; /* Matches button color for consistency */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .terms-container, .privacy-container {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
